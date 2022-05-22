@@ -1,0 +1,160 @@
+#colorPallete {
+  background: #e9692c;
+  background: #ed9121;
+  background: #ffc324;
+  background: #fff000;
+  background: #66b447;
+  background: #8ee53f;
+
+  background: #fb3636;
+  background: #eac738;
+  background: #f0f961;
+  background: #d2ec00;
+  background: #7ac313;
+
+  background: #450b88;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 2fr;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+
+  width: 300px;
+  height: 100vh;
+
+  background-color: #8ee53f;
+  padding: 75px 0;
+  z-index: 1;
+}
+
+li header {
+  color: #fb3636;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.nav-link {
+  display: block;
+  width: 150px;
+
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900;
+  list-style: none;
+  padding: 0.5em;
+
+  color: #fff000;
+  background: #66b447;
+}
+
+.nav-link:hover {
+  color: #fb3636;
+  background: #450b88;
+  transition: 0.5s;
+}
+
+#navbar li {
+  text-align: center;
+  margin: 1.5em;
+  list-style: none;
+}
+
+#main-doc {
+  background: gray;
+  display: flex;
+  justify-content: center;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #66b447;
+}
+
+.main-section {
+  font-size: 25px;
+  padding: 1em;
+  margin: 0;
+
+  color: #fff000;
+  background: #66b447;
+  border-radius: 0;
+}
+
+.sectionM {
+  width: 100%;
+  position: relative;
+  background: #66b447;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 150px 2fr;
+  }
+
+  #navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 150px;
+    height: 100vh;
+
+    padding: 5em 25px 25px 0;
+    z-index: 1;
+  }
+
+  #navbar ul {
+    width: 150px;
+  }
+
+  li header {
+    color: #fb3636;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .nav-link {
+    display: block;
+    width: 70px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    list-style: none;
+    padding: 0.5em;
+
+    color: #fff000;
+    background: #66b447;
+  }
+
+  .textContainer {
+    font-size: 15px;
+  }
+}
